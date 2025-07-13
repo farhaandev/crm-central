@@ -213,7 +213,7 @@ export const TaskList = () => {
       </div>
 
       {/* Task Stats */}
-      <div className="grid grid-cols-1 md:grid-cols-4 gap-4">
+      <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
         <Card>
           <CardContent className="p-4">
             <div className="flex items-center gap-3">
@@ -327,9 +327,8 @@ export const TaskList = () => {
       </Card>
 
       {/* Task Table */}
-      <Card>
-        <CardContent className="p-0">
-          <div className="overflow-x-auto">
+      <Card className='max-w-[375px] md:max-w-full md:w-full'>
+        <CardContent className="overflow-x-auto p-0">
             <Table>
               <TableHeader>
                 <TableRow>
@@ -447,7 +446,6 @@ export const TaskList = () => {
                 )}
               </TableBody>
             </Table>
-          </div>
         </CardContent>
       </Card>
 
